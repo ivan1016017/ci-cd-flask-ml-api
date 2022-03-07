@@ -1,8 +1,6 @@
 ---
 name: Build a docker iamge and push it to AWS ECR
-on:
-  release: 
-    types: [published]
+on: [push]
     
 jobs:
   test:
