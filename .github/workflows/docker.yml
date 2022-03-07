@@ -9,3 +9,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
+      - name: Buid image 
+        run: |
+          docker build .
+
+
+
+    
