@@ -13,6 +13,10 @@ optimal_knn_v1 = pickle.load(open('knn_v1.pkl','rb'))
 customer_segmentation_data_v1 = pickle.load(open('customer_segmentation_data_v1.pkl','rb'))
 feature_labels_customers_v1 = pickle.load(open('feature_labels_customers_v1.pkl','rb'))
 
+@app.route('/version', methods=['POST', 'GET'])
+def version_ml():
+    if request.method == 'get':
+        return "version 1.0"
 
 @app.route('/random_forest', methods=['POST', 'GET'])
 def random_forest_predictor():
