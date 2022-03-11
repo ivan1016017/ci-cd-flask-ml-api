@@ -16,7 +16,7 @@ feature_labels_customers_v1 = pickle.load(open('feature_labels_customers_v1.pkl'
 @app.route('/version', methods=['POST', 'GET'])
 def version_ml():
     if request.method == 'GET':
-        return "version 7.0.0"
+        return "version 8.0.0"
 
 @app.route('/random_forest', methods=['POST', 'GET'])
 def random_forest_predictor():
